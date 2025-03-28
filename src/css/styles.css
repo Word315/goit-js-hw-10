@@ -1,0 +1,50 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+/* Common styles */
+@import url('./reset.css');
+@import url('./base.css');
+@import url('./container.css');
+@import url('./animations.css');
+
+/* Sections style */
+@import url('./header.css');
+@import url('./vite-promo.css');
+@import url('./badges.css');
+@import url('./back-link.css');
+@import url('./footer.css');
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  gap: 24px 12px;
+  justify-content: center;
+  padding: 20px;
+  list-style: none;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-link {
+  display: block;
+  text-decoration: none;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
